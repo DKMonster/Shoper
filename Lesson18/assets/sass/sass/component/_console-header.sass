@@ -1,0 +1,45 @@
+$header-logo-width: 150px
+$header-menu-width: 100%
+
+.headerSpec
+	width: 100%
+	height: 50px
+	display: table
+	border: 1px solid rgba(34, 36, 38, .15)
+	+box-shadow(0 1x 2px 0 rgba(34, 36, 38, .15))
+
+	.headerLogo
+		width: $header-logo-width
+		height: 100%
+		display: inline-block
+		background-color: $artboard-color-1
+
+		.itemLogo
+			width: 100%
+			height: 100%
+			color: #fff
+			+typing(11)
+			text-align: center
+			padding: 0 15px
+			line-height: 50px
+			display: inline-block
+
+	.headerMenu
+		+calc(width, #{$header-menu-width} - #{$header-logo-width})
+		height: 100%
+		display: table
+		float: right
+		background-color: $artboard-color-13
+
+		.headerRightMenu
+			float: right
+
+			.itemDropdownPerson
+				font-size: 14px
+				font-weight: bold
+				line-height: 50px
+				padding-right: 20px
+
+				& > .menu
+					left: inherit
+					right: 5px !important
