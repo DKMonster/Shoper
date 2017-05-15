@@ -1,0 +1,56 @@
+$header-width: 100%
+$logo-width: 150px
+$menu-width: 100%
+
+.t-header
+	width: $header-width
+	height: 50px
+
+	.t-logo
+		width: $logo-width
+		height: 100%
+		display: inline-block
+		background-color: $theme-color-1
+
+		> a
+			color: #fff
+			+typing(11)
+			line-height: 50px
+			text-align: center
+			margin: 0 auto
+			display: table
+
+	.t-menu
+		+calc(width, #{$menu-width} - #{$logo-width})
+		height: 50px
+		float: right
+		display: table
+		background: $theme-color-2
+
+		ul
+			float: right
+
+		li.item
+			padding: 0 20px
+			text-align: center
+			display: inline-block
+			list-style: none
+			+transition(all .20s ease-in-out)
+
+			> a
+				+typing(8)
+				color: #fff - 100
+				font-size: 14px
+				font-weight: bold
+				line-height: 50px
+				+transition(all .20s ease-in-out)
+
+			&:hover > a
+				color: #fff - 30
+				font-size: 14px
+				font-weight: bold
+				+transition(all .20s ease-in-out)
+
+			&.active > a
+				color: #fff
+				+transition(all .20s ease-in-out)

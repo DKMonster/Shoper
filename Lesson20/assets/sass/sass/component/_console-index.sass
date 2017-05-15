@@ -1,0 +1,14 @@
+$slider-menu-width: 150px
+$content-menu-width: 100%
+$content-menu-height: 100%
+$header-menu-height: 50px
+
+.contentSpec
+	+calc(width, #{$content-menu-width} - #{$slider-menu-width})
+	+calc(height, #{$content-menu-height} - #{$header-menu-height})
+	display: inline-block
+	float: right
+	padding: 0
+
+	.containerSpec
+		padding: 50px

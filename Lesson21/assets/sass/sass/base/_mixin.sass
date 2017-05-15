@@ -1,0 +1,226 @@
+@mixin typing($num)
+  @if $num == 1 /* 當前功能 */
+    font-size: 30px
+    font-weight: bold
+    font-family: 'NotoSansCJKtc-Bold', 'Helvetica', 'Arial'
+    letter-spacing: 2px
+    color: $artboard-color-8
+  @else if $num == 2 /* 大分類 */
+    font-size: 24px
+    font-weight: 500
+    font-family: 'NotoSansCJKtc-Medium', 'Helvetica', 'Arial'
+    text-align: center
+    letter-spacing: 0.9px
+    color: $artboard-color-8
+  @else if $num == 3 /* 大Tag Focus */
+    font-size: 16px
+    font-weight: 500
+    font-family: 'NotoSansCJKtc-Medium', 'Helvetica', 'Arial'
+    text-align: center
+    letter-spacing: 1.4px
+    color: $artboard-color-8
+  @else if $num == 4 /* 大Tag空 */
+    font-size: 16px
+    font-weight: 300
+    font-family: 'NotoSansCJKtc-DemiLight', 'Helvetica', 'Arial'
+    text-align: center
+    letter-spacing: 1.4px
+    color: $artboard-color-8
+  @else if $num == 5 /* 一般內容、頁碼、小Tag Focus */
+    font-size: 14px
+    font-weight: normal
+    font-family: 'NotoSansCJKtc-Regular', 'Helvetica', 'Arial'
+    letter-spacing: 1.2px
+    color: $artboard-color-8
+  @else if $num == 6 /* 表格分類 */
+    font-size: 14px
+    font-weight: bold
+    font-family: 'NotoSansCJKtc-Bold', 'Helvetica', 'Arial'
+    letter-spacing: 1.2px
+    color: $artboard-color-8
+  @else if $num == 7 /* 小Tag空 */
+    font-size: 14px
+    font-weight: 100
+    font-family: 'NotoSansCJKtc-Thin', 'Helvetica', 'Arial'
+    letter-spacing: 1.2px
+    color: $artboard-color-8
+  @else if $num == 8 /* 左方選單項目 */
+    font-size: 12px
+    font-weight: normal
+    font-family: 'NotoSansCJKtc-Regular', 'Helvetica', 'Arial'
+    letter-spacing: 1px
+    color: $artboard-color-8
+  @else if $num == 9 /* 小項目標題 */
+    font-size: 12px
+    font-weight: 100
+    font-family: 'NotoSansCJKtc-Thin', 'Helvetica', 'Arial'
+    letter-spacing: 0.2px
+    color: $artboard-color-8
+  @else if $num == 10 /* 附註文字 */
+    font-size: 12px
+    font-weight: 300
+    font-family: 'NotoSansCJKtc-DemiLight', 'Helvetica', 'Arial'
+    letter-spacing: 1px
+    color: $artboard-color-8
+  @else if $num == 11 /* 標題名稱 */
+    font-size: 24px
+    font-weight: bold
+    font-family: 'NotoSansCJKtc-Bold', 'Helvetica', 'Arial'
+    letter-spacing: 1px
+    color: $artboard-color-13
+  @else if $num == 12 /* 母系統、User */
+    font-size: 16px
+    font-weight: 500
+    font-family: 'NotoSansCJKtc-Medium', 'Helvetica', 'Arial'
+    letter-spacing: 0.5px
+    color: $artboard-color-13
+  @else if $num == 13 /* 按鈕、當前頁碼 */
+    font-size: 14px
+    font-weight: 500
+    font-family: 'NotoSansCJKtc-Medium', 'Helvetica', 'Arial'
+    letter-spacing: 1px
+    color: $artboard-color-13
+
+
+
+/*  [image background]  */
+
+@mixin bg($name,$bg)   
+  background: url("../img/#{$name}.#{$bg}")  
+  width: image-width("../img/#{$name}.#{$bg}")  
+  height: image-height("../img/#{$name}.#{$bg}")  
+@mixin text-hide  
+  white-space: nowrap  
+  text-indent: 100%  
+  overflow: hidden  
+
+/*  [ + - * / ]  */
+
+@mixin calc($property, $expression) 
+  #{$property}: -webkit-calc(#{$expression})
+  #{$property}: -moz-calc(#{$expression})
+  #{$property}: calc(#{$expression})
+
+/*  [absolute top right bottom left]  */
+
+@mixin pos-ab($t , $r , $b , $l)
+  position: absolute
+
+  @if $t != ""
+    top: $t
+  @if $r != ""
+    right: $r
+  @if $b != ""
+    bottom: $b
+  @if $l != ""
+    left: $l
+
+  display: block
+
+/*  [setting width and height]  */
+
+@mixin w-h($w , $h)
+  @if $w != ""
+    width: $w
+  @if $h != ""
+    height: $h
+
+/*  [setting animation] */
+
+@mixin animation($animate)
+  -webkit-animation: $animate
+  -moz-animation: $animate
+  animation: $animate
+
+@mixin animation-delay($animate)
+  -webkit-animation-delay: $animate
+  -moz-animation: $animate
+  animation-delay: $animate
+
+@mixin animation-name($animate)
+  -webkit-animation-name: $animate
+  -moz-animation-name: $animate
+  animation-name: $animate
+
+@mixin animation-duration($animate)
+  -webkit-animation-duration: $animate
+  -moz-animation-duration: $animate
+  animation-duration: $animate
+
+@mixin animation-timing-function($animate)
+  -webkit-animation-timing-function: $animate
+  -moz-animation-timing-function: $animate
+  animation-timing-function: $animate
+
+@mixin animation-iteration-count($animate)
+  -webkit-animation-iteration-count: $animate
+  -moz-animation-iteration-count: $animate
+  animation-iteration-count: $animate
+
+@mixin animation-direction($animate)
+  -webkit-animation-direction: $animate
+  -moz-animation-direction: $animate
+  animation-direction: $animate
+
+@mixin animation-play-state($animate)
+  -webkit-animation-play-state: $animate
+  -moz-animation-play-state: $animate
+  animation-play-state: $animate
+
+@mixin animation-fill-mode($animate)
+  -webkit-animation-fill-mode: $animate
+  -moz-animation-fill-mode: $animate
+  animation-fill-mode: $animate
+
+/*  [Clearfix]  */
+
+%clearfix
+  &:before , &:after
+    content: ""
+    display: table
+
+  &:after
+    clear: both
+
+/* [set base font] */
+
+@mixin baseText($color , $size , $bold , $lineH , $align)
+  color: $color
+  font-size: $size
+  font-weight: $bold
+  line-height: $lineH
+  text-align: $align
+
+
+/* [setting border] */
+
+@mixin bottomShadow()
+  border-bottom: 1px solid rgba(0 , 0 , 0 , 0.3)
+  +box-shadow(0 1px 0 rgba(255,255,255,0.05) inset)
+
+@mixin rightShadow()
+  border-right: 1px solid rgba(0 , 0 , 0 , 0.3)
+  +box-shadow(-1px 0 0 rgba(255,255,255,0.05) inset)
+
+@mixin leftShadow()
+  border-left: 1px solid rgba(0 , 0 , 0 , 0.3)
+  +box-shadow(-1px 0 0 rgba(255,255,255,0.05) inset)
+
+@mixin topShadow()
+  border-top: 1px solid rgba(0 , 0 , 0 , 0.3)
+  +box-shadow(0 1px 0 rgba(255,255,255,0.05) inset)
+
+// ****************************
+// ******   keyframes    ******
+// ****************************
+
+//* Mixin for keyframes */
+@mixin keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
