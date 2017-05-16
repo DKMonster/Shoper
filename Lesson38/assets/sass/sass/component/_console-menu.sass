@@ -1,0 +1,49 @@
+$slider-menu-width: 150px
+$slider-menu-height: 100%
+$header-menu-height: 50px
+
+.sliderSpec
+	width: $slider-menu-width
+	+calc(height, #{$slider-menu-height} - #{$header-menu-height})
+	display: inline-block
+	float: left
+	background-color: $artboard-color-8
+
+	.sliderList
+		margin: 0
+		padding: 0
+
+		.sliderMenuItem
+			width: 100%
+			height: 50px
+			display: inline-block
+			+transition(all .20s ease-in-out)
+
+			& > a
+				width: 100%
+				height: 100%
+				+typing(8)
+				display: block
+				line-height: 50px
+				text-align: left
+				color: $artboard-color-13
+				padding: 0 0 0 25px
+				+transition(all .20s ease-in-out)
+
+			&:hover
+				background-color: $artboard-color-13
+				+transition(all .20s ease-in-out)
+
+				& > a
+					color: $artboard-color-1
+
+			&.menuActive
+				background-color: $artboard-color-13
+				+transition(all .20s ease-in-out)
+
+				& > a
+					color: $artboard-color-1
+
+			&.disable
+				+opacity(.3)
+				+transition(all .20s ease-in-out)

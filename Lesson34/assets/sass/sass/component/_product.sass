@@ -1,0 +1,187 @@
+$break-xsmall: 520px
+$break-small: 860px
+$break-large: 1200px
+
+.product-detals
+	width: 100%
+	height: auto
+	display: table
+	padding: 20px 20px 50px 20px
+
+	.pd-spec
+		width: 100%
+		min-height: 80px
+		display: table
+		padding: 0 10%
+
+		@media screen and (max-width: $break-small)
+			padding: 0 20px
+
+	.productImage
+		width: 50%
+		height: auto
+		display: table
+		float: left
+
+		@media screen and (max-width: $break-small)
+			width: 100%
+
+		.previewImage
+			width: 300px
+			height: 300px
+			display: block
+			margin: 0 auto
+			padding: 0
+			background-color: #fff
+			border: 1px solid rgba(0, 0, 0, 0.1)
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			+background-size(cover)
+			+background-origin(content-box)
+
+		.smallImage
+			width: 300px
+			height: 100px
+			display: block
+			margin: 0 auto
+			margin-top: 10px
+
+			> ul
+				display: table
+				padding: 0
+
+			.itemImage
+				width: 50px
+				height: 50px
+				display: inline-block
+				margin-left: 12px
+				padding: 5px
+				cursor: pointer
+				border: 1px solid rgba(0, 0, 0, 0.1)
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				+background-size(cover)
+				+background-origin(content-box)
+				+transition(all .20s ease-in-out)
+
+				&:nth-child(1)
+					margin-left: 0
+
+				&:hover
+					+box-shadow(2px 2px 2px #808080)
+					+transition(all .20s ease-in-out)
+
+	.productInfo
+		width: 50%
+		height: auto
+		display: table
+		float: right
+
+		@media screen and (max-width: $break-small)
+			width: 100%
+			padding: 20px
+		@media screen and (max-width: $break-small) and (min-width: $break-xsmall)
+			width: 100%
+			padding: 20px 20%
+
+		.itemTitle
+			font-size: 36px
+			line-height: 50px
+			display: block
+
+		.itemSubTitle
+			font-size: 16px
+			line-height: 30px
+			display: inline
+
+		.itemPrice
+			display: block
+
+			.priceCost
+				color: $artboard-color-2
+				font-size: 32px
+				line-height: 50px
+				display: inline-bock
+
+			.priceOrigin
+				font-size: 18px
+				line-height: 50px
+				text-decoration: line-through
+				display: inline-block
+
+			.availableCount
+				font-size: 14px
+				line-height: 50px
+				margin-right: 20px
+				margin-top: 6px
+				float: right
+				display: inline-block
+
+		.itemSubject
+			font-size: 12px
+			-o-transform: scale(1)
+			-webkit-transform: scale(0.85714286)
+
+		.itemPayment
+			display: table
+			margin: 10px 0
+
+		.itemQuantity
+			display: table
+
+			@media screen and (max-width: $break-xsmall)
+				margin: 0 auto
+
+			.btnQMinus, .btnQPlus
+				width: 30px
+				height: 30px
+				color: #000
+				display: inline-block
+				text-align: center
+				line-height: 30px
+				margin: 10px 5px
+				border: 1px solid #777
+				cursor: pointer
+				+opacity(.5)
+				+transition(all .20s ease-in-out)
+
+				&:hover
+					+opacity(.9)
+					+box-shadow(2px 2px 2px #808080)
+					+transition(all .20s ease-in-out)
+
+			.inputQuantity
+				width: 200px
+				height: 30px
+				color: #000
+				display: inline-block
+				text-align: center
+				line-height: 30px
+				border: none
+				outline: none
+				background-color: transparent
+				border-bottom: 1px solid #aaa
+
+		.itemFormButton
+			margin: 10px
+			margin-left: 5px
+
+			@media screen and (max-width: $break-xsmall)
+				margin: 0 auto
+				margin-top: 20px
+				display: table
+
+				.ui.button
+					width: 100%
+					margin: 10px 0
+
+	.productDetal
+		width: 100%
+		height: auto
+		margin: 0 auto
+		display: table
+
+		.itemDetal
+			padding: 30px
+			img
+				width: 100%

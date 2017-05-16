@@ -1,0 +1,166 @@
+$header-width: 100%
+$logo-width: 150px
+$menu-width: 100%
+
+$break-xsmall: 520px
+$break-small: 860px
+$break-large: 1200px
+
+.t-header
+	width: $header-width
+	height: 50px
+
+	.t-logo
+		width: $logo-width
+		height: 100%
+		display: inline-block
+		background-color: $theme-color-1
+
+		> a
+			color: #fff
+			+typing(11)
+			line-height: 50px
+			text-align: center
+			margin: 0 auto
+			display: table
+
+	.t-menu
+		+calc(width, #{$menu-width} - #{$logo-width})
+		height: 50px
+		float: right
+		display: table
+		background: $theme-color-2
+
+		ul
+			float: right
+
+		li.item
+			padding: 0 20px
+			text-align: center
+			display: inline-block
+			list-style: none
+			+transition(all .20s ease-in-out)
+
+			&.itemNavSideBar
+				display: none
+
+			@media screen and (max-width: $break-large)
+				display: none
+				
+				&.itemNavSideBar
+					display: inline-block
+
+			> a
+				+typing(8)
+				color: #fff - 100
+				font-size: 14px
+				font-weight: bold
+				line-height: 50px
+				+transition(all .20s ease-in-out)
+
+			&:hover > a
+				color: #fff - 30
+				font-size: 14px
+				font-weight: bold
+				+transition(all .20s ease-in-out)
+
+			&.active > a
+				color: #fff
+				+transition(all .20s ease-in-out)
+
+$sideAction-height: 100px
+
+.sidebarCart
+	width: 350px !important
+
+	.sideCartItem
+		width: 100%
+		+calc(height, 100% - #{$sideAction-height})
+		display: table
+
+		.item
+			width: 100%
+			height: 80px
+			padding: 0
+			margin: 0
+
+		.itemCartImage
+			width: 50px
+			height: 50px
+			float: left
+			margin: 0 5px
+			background: #fff
+			display: inline-block
+
+			.image
+				width: 100%
+				height: 100%
+				padding: 2px
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				+background-size(cover)
+				+background-origin(content-box)
+
+		.itemCartName
+			padding: 0 5px
+			line-height: 30px
+			display: table
+			font-size: 18px
+			font-weight: bold
+
+		.itemCartQty
+			display: inline-block
+			font-size: 12px
+			line-height: 20px
+			margin-left: 5px
+
+		.itemCartPrice
+			display: inline-block
+			font-size: 12px
+			line-height: 20px
+			margin-left: 5px
+
+		.itemCartTotal
+			display: inline-block
+			font-size: 12px
+			line-height: 20px
+			margin-left: 5px
+		
+		.itemCartRemove
+			position: absolute
+			top: 10px
+			right: 5px
+			font-size: 18px
+			color: #fff
+			+transition(all .20s ease-in-out)
+
+			&:hover
+				color: #fff - 50
+				+transition(all .20s ease-in-out)
+
+	.sideCartAction
+		width: 100%
+		height: $sideAction-height
+		display: table
+		margin: 0 auto
+		padding: 0
+
+		.cartTotalPrice
+			width: 100%
+			height: 50px
+			color: #fff
+			font-size: 18px
+			line-height: 50px
+			padding: 0 10px
+			display: inline-block
+			border-top: 1px solid #ccc
+
+			.tprice
+				float: right
+
+		.btnBuyCart, .btnResetCart
+			width: 50%
+			margin: 0 auto
+			padding: 15px
+			display: inline-block
+			+border-radius(0)

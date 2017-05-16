@@ -1,0 +1,29 @@
+.about-spec
+	display: table
+
+	.as-left
+		padding: 50px
+		width: 50%
+		min-height: 500px
+		float: left
+
+		.asl-title
+			+typing(2)
+
+		.asl-content
+			+typing(5)
+
+	.as-right
+		width: 50%
+		min-height: 500px
+		float: right
+
+		.asr-image
+			width: 100%
+			min-height: 500px
+			display: inline-block
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			+background-size(cover)
+			+background-origin(content-box)
+			background-image: url(../img/snappa_1465269679.jpg)

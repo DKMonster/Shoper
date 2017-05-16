@@ -1,0 +1,1196 @@
+@charset "UTF-8";
+/* --------- import setting --------- */
+/* ----------- color setting ----------- */
+/* ----------- component setting ----------- */
+/* ----------- fonts family ----------- */
+@font-face {
+  font-family: "NotoSansCJKtc-Black";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Black.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Bold";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Bold.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-DemiLight";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-DemiLight.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Light";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Light.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Medium.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Regular";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Regular.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Thin";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Thin.otf);
+}
+/*  [image background]  */
+/*  [ + - * / ]  */
+/*  [absolute top right bottom left]  */
+/*  [setting width and height]  */
+/*  [setting animation] */
+/*  [Clearfix]  */
+/* [set base font] */
+/* [setting border] */
+/* line 1, ../sass/sass/base/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 8, ../sass/sass/base/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 11, ../sass/sass/base/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/sass/base/_reset.sass */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 17, ../sass/sass/base/_reset.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 21, ../sass/sass/base/_reset.sass */
+[hidden] {
+  display: none;
+}
+
+/* line 25, ../sass/sass/base/_reset.sass */
+a:focus {
+  outline: thin dotted;
+}
+/* line 27, ../sass/sass/base/_reset.sass */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 30, ../sass/sass/base/_reset.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 33, ../sass/sass/base/_reset.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 36, ../sass/sass/base/_reset.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 39, ../sass/sass/base/_reset.sass */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 44, ../sass/sass/base/_reset.sass */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 48, ../sass/sass/base/_reset.sass */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 52, ../sass/sass/base/_reset.sass */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 55, ../sass/sass/base/_reset.sass */
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+/* line 58, ../sass/sass/base/_reset.sass */
+small {
+  font-size: 80%;
+}
+
+/* line 61, ../sass/sass/base/_reset.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 67, ../sass/sass/base/_reset.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* line 74, ../sass/sass/base/_reset.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 77, ../sass/sass/base/_reset.sass */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 81, ../sass/sass/base/_reset.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 84, ../sass/sass/base/_reset.sass */
+figure {
+  margin: 0;
+}
+
+/* line 87, ../sass/sass/base/_reset.sass */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 92, ../sass/sass/base/_reset.sass */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 96, ../sass/sass/base/_reset.sass */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 101, ../sass/sass/base/_reset.sass */
+button, input {
+  line-height: normal;
+}
+
+/* line 104, ../sass/sass/base/_reset.sass */
+button, select {
+  text-transform: none;
+}
+
+/* line 107, ../sass/sass/base/_reset.sass */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 112, ../sass/sass/base/_reset.sass */
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 116, ../sass/sass/base/_reset.sass */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 120, ../sass/sass/base/_reset.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 123, ../sass/sass/base/_reset.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 128, ../sass/sass/base/_reset.sass */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 131, ../sass/sass/base/_reset.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 135, ../sass/sass/base/_reset.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 139, ../sass/sass/base/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 142, ../sass/sass/base/_reset.sass */
+.clearfix {
+  zoom: 1;
+}
+/* line 143, ../sass/sass/base/_reset.sass */
+.clearfix:before {
+  content: "";
+  display: table;
+}
+/* line 146, ../sass/sass/base/_reset.sass */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 151, ../sass/sass/base/_reset.sass */
+html {
+  font-family: sans-serif;
+  line-height: 1;
+  font-size: 16px;
+}
+
+/* line 156, ../sass/sass/base/_reset.sass */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --------- base setting --------- */
+/* line 10, ../sass/sass/index.sass */
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+
+/* line 14, ../sass/sass/index.sass */
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: table;
+  overflow: auto;
+}
+
+/* line 23, ../sass/sass/index.sass */
+.wrapper-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url("../../assets/img/pattern/playstation-pattern.png");
+}
+
+/* --------- component setting --------- */
+/* line 1, ../sass/sass/component/_index.sass */
+.ad-slider {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+/* line 7, ../sass/sass/component/_index.sass */
+.ad-slider .unslider-images {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+/* line 13, ../sass/sass/component/_index.sass */
+.ad-slider .slider-images {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+/* line 18, ../sass/sass/component/_index.sass */
+.ad-slider .slider-images .image {
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+}
+/* line 27, ../sass/sass/component/_index.sass */
+.ad-slider .unslider {
+  position: relative;
+}
+/* line 30, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-arrow {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  top: 40%;
+}
+/* line 37, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-arrow > .icon {
+  color: #cdcdcd;
+  font-size: 24px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 42, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-arrow:hover > .icon {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 46, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav {
+  width: 100%;
+  bottom: 0;
+  display: table;
+  position: absolute;
+}
+/* line 52, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav ol {
+  position: relative;
+  margin: 0 auto;
+  display: table;
+}
+/* line 57, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav li {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 67, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav li.unslider-active {
+  font-weight: bold;
+  color: #5e5768;
+  background-color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 73, ../sass/sass/component/_index.sass */
+.feature-product {
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: 20px 20px 50px 20px;
+}
+/* line 79, ../sass/sass/component/_index.sass */
+.feature-product .title-spec {
+  width: 100%;
+  height: 80px;
+  display: table;
+  padding: 0 10%;
+}
+/* line 85, ../sass/sass/component/_index.sass */
+.feature-product .title-spec .ui.header {
+  line-height: 80px;
+}
+/* line 88, ../sass/sass/component/_index.sass */
+.feature-product .title-spec .ui.header .content {
+  line-height: 30px;
+}
+/* line 91, ../sass/sass/component/_index.sass */
+.feature-product .product-spec {
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  display: table;
+  padding: 0 10%;
+}
+/* line 98, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .image {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+}
+/* line 103, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .image > img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  cursor: pointer;
+}
+/* line 114, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .content > .header {
+  display: block;
+  text-align: center;
+}
+/* line 117, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .content > .price {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* line 9, ../sass/sass/component/_header.sass */
+.t-header {
+  width: 100%;
+  height: 50px;
+}
+/* line 13, ../sass/sass/component/_header.sass */
+.t-header .t-logo {
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  background-color: #3a445d;
+}
+/* line 19, ../sass/sass/component/_header.sass */
+.t-header .t-logo > a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "NotoSansCJKtc-Bold", "Helvetica", "Arial";
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}
+/* line 27, ../sass/sass/component/_header.sass */
+.t-header .t-menu {
+  width: -webkit-calc(100% - 150px);
+  width: -moz-calc(100% - 150px);
+  width: calc(100% - 150px);
+  height: 50px;
+  float: right;
+  display: table;
+  background: #5e5768;
+}
+/* line 34, ../sass/sass/component/_header.sass */
+.t-header .t-menu ul {
+  float: right;
+}
+/* line 37, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item {
+  padding: 0 20px;
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 44, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item.itemNavSideBar {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  /* line 37, ../sass/sass/component/_header.sass */
+  .t-header .t-menu li.item {
+    display: none;
+  }
+  /* line 50, ../sass/sass/component/_header.sass */
+  .t-header .t-menu li.item.itemNavSideBar {
+    display: inline-block;
+  }
+}
+/* line 53, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item > a {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "NotoSansCJKtc-Regular", "Helvetica", "Arial";
+  letter-spacing: 1px;
+  color: #333A47;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 50px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 61, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item:hover > a {
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: bold;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 67, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item.active > a {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 73, ../sass/sass/component/_header.sass */
+.sidebarCart {
+  width: 350px !important;
+}
+/* line 76, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem {
+  width: 100%;
+  height: -webkit-calc(100% - 100px);
+  height: -moz-calc(100% - 100px);
+  height: calc(100% - 100px);
+  display: table;
+}
+/* line 81, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .item {
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+/* line 87, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartImage {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 0 5px;
+  background: #fff;
+  display: inline-block;
+}
+/* line 95, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartImage .image {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+}
+/* line 104, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartName {
+  padding: 0 5px;
+  line-height: 30px;
+  display: table;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 111, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartQty {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+/* line 117, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartPrice {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+/* line 123, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartTotal {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+/* line 129, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartRemove {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 18px;
+  color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 137, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartItem .itemCartRemove:hover {
+  color: #cdcdcd;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 141, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartAction {
+  width: 100%;
+  height: 100px;
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 148, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartAction .cartTotalPrice {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0 10px;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+}
+/* line 158, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartAction .cartTotalPrice .tprice {
+  float: right;
+}
+/* line 161, ../sass/sass/component/_header.sass */
+.sidebarCart .sideCartAction .btnBuyCart, .sidebarCart .sideCartAction .btnResetCart {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  display: inline-block;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 1, ../sass/sass/component/_footer.sass */
+.t-footer {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  background-color: #3a445d;
+}
+
+/* line 1, ../sass/sass/component/_news.sass */
+.news-spec {
+  padding: 50px;
+  margin: 20px;
+  display: table;
+}
+
+/* line 1, ../sass/sass/component/_about.sass */
+.about-spec {
+  display: table;
+}
+/* line 4, ../sass/sass/component/_about.sass */
+.about-spec .as-left {
+  padding: 50px;
+  width: 50%;
+  min-height: 500px;
+  float: left;
+}
+/* line 10, ../sass/sass/component/_about.sass */
+.about-spec .as-left .asl-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "NotoSansCJKtc-Medium", "Helvetica", "Arial";
+  text-align: center;
+  letter-spacing: 0.9px;
+  color: #333A47;
+}
+/* line 13, ../sass/sass/component/_about.sass */
+.about-spec .as-left .asl-content {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "NotoSansCJKtc-Regular", "Helvetica", "Arial";
+  letter-spacing: 1.2px;
+  color: #333A47;
+}
+/* line 16, ../sass/sass/component/_about.sass */
+.about-spec .as-right {
+  width: 50%;
+  min-height: 500px;
+  float: right;
+}
+/* line 21, ../sass/sass/component/_about.sass */
+.about-spec .as-right .asr-image {
+  width: 100%;
+  min-height: 500px;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  background-image: url(../img/snappa_1465269679.jpg);
+}
+
+/* line 1, ../sass/sass/component/_products.sass */
+.products-spec {
+  padding: 50px;
+}
+
+/* line 5, ../sass/sass/component/_product.sass */
+.product-detals {
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: 20px 20px 50px 20px;
+}
+/* line 11, ../sass/sass/component/_product.sass */
+.product-detals .pd-spec {
+  width: 100%;
+  min-height: 80px;
+  display: table;
+  padding: 0 10%;
+}
+@media screen and (max-width: 860px) {
+  /* line 11, ../sass/sass/component/_product.sass */
+  .product-detals .pd-spec {
+    padding: 0 20px;
+  }
+}
+/* line 20, ../sass/sass/component/_product.sass */
+.product-detals .productImage {
+  width: 50%;
+  height: auto;
+  display: table;
+  float: left;
+}
+@media screen and (max-width: 860px) {
+  /* line 20, ../sass/sass/component/_product.sass */
+  .product-detals .productImage {
+    width: 100%;
+  }
+}
+/* line 29, ../sass/sass/component/_product.sass */
+.product-detals .productImage .previewImage {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+}
+/* line 42, ../sass/sass/component/_product.sass */
+.product-detals .productImage .smallImage {
+  width: 300px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+/* line 49, ../sass/sass/component/_product.sass */
+.product-detals .productImage .smallImage > ul {
+  display: table;
+  padding: 0;
+}
+/* line 53, ../sass/sass/component/_product.sass */
+.product-detals .productImage .smallImage .itemImage {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 12px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 67, ../sass/sass/component/_product.sass */
+.product-detals .productImage .smallImage .itemImage:nth-child(1) {
+  margin-left: 0;
+}
+/* line 70, ../sass/sass/component/_product.sass */
+.product-detals .productImage .smallImage .itemImage:hover {
+  -moz-box-shadow: 2px 2px 2px #808080;
+  -webkit-box-shadow: 2px 2px 2px #808080;
+  box-shadow: 2px 2px 2px #808080;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 74, ../sass/sass/component/_product.sass */
+.product-detals .productInfo {
+  width: 50%;
+  height: auto;
+  display: table;
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  /* line 74, ../sass/sass/component/_product.sass */
+  .product-detals .productInfo {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 860px) and (min-width: 520px) {
+  /* line 74, ../sass/sass/component/_product.sass */
+  .product-detals .productInfo {
+    width: 100%;
+    padding: 20px 20%;
+  }
+}
+/* line 87, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemTitle {
+  font-size: 36px;
+  line-height: 50px;
+  display: block;
+}
+/* line 92, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemSubTitle {
+  font-size: 16px;
+  line-height: 30px;
+  display: inline;
+}
+/* line 97, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemPrice {
+  display: block;
+}
+/* line 100, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemPrice .priceCost {
+  color: #E765B1;
+  font-size: 32px;
+  line-height: 50px;
+  display: inline-bock;
+}
+/* line 106, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemPrice .priceOrigin {
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: line-through;
+  display: inline-block;
+}
+/* line 112, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemPrice .availableCount {
+  font-size: 14px;
+  line-height: 50px;
+  margin-right: 20px;
+  margin-top: 6px;
+  float: right;
+  display: inline-block;
+}
+/* line 120, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemSubject {
+  font-size: 12px;
+  -o-transform: scale(1);
+  -webkit-transform: scale(0.85714286);
+}
+/* line 125, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemPayment {
+  display: table;
+  margin: 10px 0;
+}
+/* line 129, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemQuantity {
+  display: table;
+}
+@media screen and (max-width: 520px) {
+  /* line 129, ../sass/sass/component/_product.sass */
+  .product-detals .productInfo .itemQuantity {
+    margin: 0 auto;
+  }
+}
+/* line 135, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemQuantity .btnQMinus, .product-detals .productInfo .itemQuantity .btnQPlus {
+  width: 30px;
+  height: 30px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin: 10px 5px;
+  border: 1px solid #777;
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 148, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemQuantity .btnQMinus:hover, .product-detals .productInfo .itemQuantity .btnQPlus:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  -moz-box-shadow: 2px 2px 2px #808080;
+  -webkit-box-shadow: 2px 2px 2px #808080;
+  box-shadow: 2px 2px 2px #808080;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 153, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemQuantity .inputQuantity {
+  width: 200px;
+  height: 30px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #aaa;
+}
+/* line 165, ../sass/sass/component/_product.sass */
+.product-detals .productInfo .itemFormButton {
+  margin: 10px;
+  margin-left: 5px;
+}
+@media screen and (max-width: 520px) {
+  /* line 165, ../sass/sass/component/_product.sass */
+  .product-detals .productInfo .itemFormButton {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: table;
+  }
+  /* line 174, ../sass/sass/component/_product.sass */
+  .product-detals .productInfo .itemFormButton .ui.button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* line 178, ../sass/sass/component/_product.sass */
+.product-detals .productDetal {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: table;
+}
+/* line 184, ../sass/sass/component/_product.sass */
+.product-detals .productDetal .itemDetal {
+  padding: 30px;
+}
+/* line 186, ../sass/sass/component/_product.sass */
+.product-detals .productDetal .itemDetal img {
+  width: 100%;
+}
+
+/* line 5, ../sass/sass/component/_order.sass */
+.checkout-spec {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+}
+/* line 14, ../sass/sass/component/_order.sass */
+.checkout-spec > .content {
+  width: 100%;
+  display: table;
+}
+/* line 18, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  float: left;
+  display: inline-block;
+}
+@media screen and (max-width: 860px) {
+  /* line 18, ../sass/sass/component/_order.sass */
+  .checkout-spec > .content .specCart {
+    width: 100%;
+  }
+}
+/* line 28, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .item {
+  width: 100%;
+  display: table;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+/* line 34, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartTitle {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 40, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartNone {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "NotoSansCJKtc-Medium", "Helvetica", "Arial";
+  text-align: center;
+  letter-spacing: 0.9px;
+  color: #333A47;
+  text-align: center;
+}
+/* line 44, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartImage {
+  width: 30%;
+  float: left;
+  display: inline-block;
+}
+/* line 49, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartImage > .image {
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 60, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartContent {
+  width: 70%;
+  display: table;
+  padding: 0 10px;
+}
+/* line 65, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartContent .specCartName {
+  width: 100%;
+  font-size: 24px;
+  line-height: 30px;
+  display: inline-block;
+}
+/* line 71, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartContent .specCartQty, .checkout-spec > .content .specCart .specCartContent .specCartPrice, .checkout-spec > .content .specCart .specCartContent .specCartTotal {
+  width: 50%;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+}
+/* line 77, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartContent .specCartAction {
+  width: 100%;
+  display: inline-block;
+}
+/* line 81, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specCart .specCartContent .specCartAction .specCartRemove {
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: table;
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  /* line 81, ../sass/sass/component/_order.sass */
+  .checkout-spec > .content .specCart .specCartContent .specCartAction .specCartRemove {
+    padding: 10px;
+  }
+}
+/* line 89, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specForm {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  display: inline-block;
+}
+@media screen and (max-width: 860px) {
+  /* line 89, ../sass/sass/component/_order.sass */
+  .checkout-spec > .content .specForm {
+    width: 100%;
+  }
+}
+/* line 98, ../sass/sass/component/_order.sass */
+.checkout-spec > .content .specForm .specFormTitle {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
