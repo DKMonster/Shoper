@@ -1,0 +1,102 @@
+$break-xsmall: 520px
+$break-small: 860px
+$break-large: 1200px
+
+.checkout-spec
+	width: 100%
+	height: auto
+	display: block
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	+background-size(cover)
+	+background-origin(content-box)
+
+	> .content
+		width: 100%
+		display: table
+
+		.specCart
+			width: 50%
+			height: auto
+			padding: 20px
+			float: left
+			display: inline-block
+
+			@media screen and (max-width: $break-small)
+				width: 100%
+
+			.item
+				width: 100%
+				display: table
+				border-bottom: 1px solid rgba(0, 0, 0, .1)
+				padding: 10px
+
+			.specCartTitle
+				display: block
+				font-size: 24px
+				font-weight: bold
+				line-height: 30px
+
+			.specCartNone
+				+typing(2)
+				text-align: center
+
+			.specCartImage
+				width: 30%
+				float: left
+				display: inline-block
+
+				> .image
+					width: 100px
+					height: 100px
+					padding: 2px
+					margin: 0 auto
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					+background-size(cover)
+					+background-origin(content-box)
+					border: 1px solid rgba(0, 0, 0, .1)
+
+			.specCartContent
+				width: 70%
+				display: table
+				padding: 0 10px
+
+				.specCartName
+					width: 100%
+					font-size: 24px
+					line-height: 30px
+					display: inline-block
+
+				.specCartQty, .specCartPrice, .specCartTotal
+					width: 50%
+					font-size: 16px
+					line-height: 30px
+					display: inline-block
+
+				.specCartAction
+					width: 100%
+					display: inline-block
+
+					.specCartRemove
+						padding: 10px 20px 
+						margin: 0 auto
+						display: table
+						float: right
+						@media screen and (max-width: $break-small)
+							padding: 10px
+
+		.specForm
+			width: 50%
+			height: auto
+			padding: 20px
+			display: inline-block
+
+			@media screen and (max-width: $break-small)
+				width: 100%
+
+			.specFormTitle
+				display: block
+				font-size: 24px
+				font-weight: bold
+				line-height: 30px

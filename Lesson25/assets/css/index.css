@@ -1,0 +1,649 @@
+@charset "UTF-8";
+/* --------- import setting --------- */
+/* ----------- color setting ----------- */
+/* ----------- component setting ----------- */
+/* ----------- fonts family ----------- */
+@font-face {
+  font-family: "NotoSansCJKtc-Black";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Black.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Bold";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Bold.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-DemiLight";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-DemiLight.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Light";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Light.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Medium.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Regular";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Regular.otf);
+}
+@font-face {
+  font-family: "NotoSansCJKtc-Thin";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../assets/fonts/NotoSansCJKtc-Thin.otf);
+}
+/*  [image background]  */
+/*  [ + - * / ]  */
+/*  [absolute top right bottom left]  */
+/*  [setting width and height]  */
+/*  [setting animation] */
+/*  [Clearfix]  */
+/* [set base font] */
+/* [setting border] */
+/* line 1, ../sass/sass/base/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 8, ../sass/sass/base/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 11, ../sass/sass/base/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/sass/base/_reset.sass */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 17, ../sass/sass/base/_reset.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 21, ../sass/sass/base/_reset.sass */
+[hidden] {
+  display: none;
+}
+
+/* line 25, ../sass/sass/base/_reset.sass */
+a:focus {
+  outline: thin dotted;
+}
+/* line 27, ../sass/sass/base/_reset.sass */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 30, ../sass/sass/base/_reset.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 33, ../sass/sass/base/_reset.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 36, ../sass/sass/base/_reset.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 39, ../sass/sass/base/_reset.sass */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 44, ../sass/sass/base/_reset.sass */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 48, ../sass/sass/base/_reset.sass */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 52, ../sass/sass/base/_reset.sass */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 55, ../sass/sass/base/_reset.sass */
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+/* line 58, ../sass/sass/base/_reset.sass */
+small {
+  font-size: 80%;
+}
+
+/* line 61, ../sass/sass/base/_reset.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 67, ../sass/sass/base/_reset.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* line 74, ../sass/sass/base/_reset.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 77, ../sass/sass/base/_reset.sass */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 81, ../sass/sass/base/_reset.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 84, ../sass/sass/base/_reset.sass */
+figure {
+  margin: 0;
+}
+
+/* line 87, ../sass/sass/base/_reset.sass */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 92, ../sass/sass/base/_reset.sass */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 96, ../sass/sass/base/_reset.sass */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 101, ../sass/sass/base/_reset.sass */
+button, input {
+  line-height: normal;
+}
+
+/* line 104, ../sass/sass/base/_reset.sass */
+button, select {
+  text-transform: none;
+}
+
+/* line 107, ../sass/sass/base/_reset.sass */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 112, ../sass/sass/base/_reset.sass */
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 116, ../sass/sass/base/_reset.sass */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 120, ../sass/sass/base/_reset.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 123, ../sass/sass/base/_reset.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 128, ../sass/sass/base/_reset.sass */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 131, ../sass/sass/base/_reset.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 135, ../sass/sass/base/_reset.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 139, ../sass/sass/base/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 142, ../sass/sass/base/_reset.sass */
+.clearfix {
+  zoom: 1;
+}
+/* line 143, ../sass/sass/base/_reset.sass */
+.clearfix:before {
+  content: "";
+  display: table;
+}
+/* line 146, ../sass/sass/base/_reset.sass */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 151, ../sass/sass/base/_reset.sass */
+html {
+  font-family: sans-serif;
+  line-height: 1;
+  font-size: 16px;
+}
+
+/* line 156, ../sass/sass/base/_reset.sass */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --------- base setting --------- */
+/* line 10, ../sass/sass/index.sass */
+html {
+  min-height: 100%;
+  overflow: auto;
+}
+
+/* line 13, ../sass/sass/index.sass */
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: table;
+  overflow: auto;
+}
+
+/* line 21, ../sass/sass/index.sass */
+.wrapper-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url("../../assets/img/pattern/playstation-pattern.png");
+}
+
+/* --------- component setting --------- */
+/* line 1, ../sass/sass/component/_index.sass */
+.ad-slider {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+/* line 7, ../sass/sass/component/_index.sass */
+.ad-slider .unslider-images {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+/* line 13, ../sass/sass/component/_index.sass */
+.ad-slider .slider-images {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+/* line 18, ../sass/sass/component/_index.sass */
+.ad-slider .slider-images .image {
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+}
+/* line 27, ../sass/sass/component/_index.sass */
+.ad-slider .unslider {
+  position: relative;
+}
+/* line 30, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-arrow {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  top: 40%;
+}
+/* line 37, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-arrow > .icon {
+  color: #cdcdcd;
+  font-size: 24px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 42, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-arrow:hover > .icon {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 46, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav {
+  width: 100%;
+  bottom: 0;
+  display: table;
+  position: absolute;
+}
+/* line 52, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav ol {
+  position: relative;
+  margin: 0 auto;
+  display: table;
+}
+/* line 57, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav li {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 67, ../sass/sass/component/_index.sass */
+.ad-slider .unslider .unslider-nav li.unslider-active {
+  font-weight: bold;
+  color: #5e5768;
+  background-color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 73, ../sass/sass/component/_index.sass */
+.feature-product {
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: 20px 20px 50px 20px;
+}
+/* line 79, ../sass/sass/component/_index.sass */
+.feature-product .title-spec {
+  width: 100%;
+  height: 80px;
+  display: table;
+  padding: 0 10%;
+}
+/* line 85, ../sass/sass/component/_index.sass */
+.feature-product .title-spec .ui.header {
+  line-height: 80px;
+}
+/* line 88, ../sass/sass/component/_index.sass */
+.feature-product .title-spec .ui.header .content {
+  line-height: 30px;
+}
+/* line 91, ../sass/sass/component/_index.sass */
+.feature-product .product-spec {
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  display: table;
+  padding: 0 10%;
+}
+/* line 98, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .image {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+}
+/* line 103, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .image > img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  cursor: pointer;
+}
+/* line 114, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .content > .header {
+  display: block;
+  text-align: center;
+}
+/* line 117, ../sass/sass/component/_index.sass */
+.feature-product .product-spec .content > .price {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* line 5, ../sass/sass/component/_header.sass */
+.t-header {
+  width: 100%;
+  height: 50px;
+}
+/* line 9, ../sass/sass/component/_header.sass */
+.t-header .t-logo {
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  background-color: #3a445d;
+}
+/* line 15, ../sass/sass/component/_header.sass */
+.t-header .t-logo > a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "NotoSansCJKtc-Bold", "Helvetica", "Arial";
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}
+/* line 23, ../sass/sass/component/_header.sass */
+.t-header .t-menu {
+  width: -webkit-calc(100% - 150px);
+  width: -moz-calc(100% - 150px);
+  width: calc(100% - 150px);
+  height: 50px;
+  float: right;
+  display: table;
+  background: #5e5768;
+}
+/* line 30, ../sass/sass/component/_header.sass */
+.t-header .t-menu ul {
+  float: right;
+}
+/* line 33, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item {
+  padding: 0 20px;
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 40, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item > a {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "NotoSansCJKtc-Regular", "Helvetica", "Arial";
+  letter-spacing: 1px;
+  color: #333A47;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 50px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 48, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item:hover > a {
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: bold;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 54, ../sass/sass/component/_header.sass */
+.t-header .t-menu li.item.active > a {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 1, ../sass/sass/component/_footer.sass */
+.t-footer {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  background-color: #3a445d;
+}
+
+/* line 1, ../sass/sass/component/_news.sass */
+.news-spec {
+  padding: 50px;
+  margin: 20px;
+  display: table;
+}
+
+/* line 1, ../sass/sass/component/_about.sass */
+.about-spec {
+  display: table;
+}
+/* line 4, ../sass/sass/component/_about.sass */
+.about-spec .as-left {
+  padding: 50px;
+  width: 50%;
+  min-height: 500px;
+  float: left;
+}
+/* line 10, ../sass/sass/component/_about.sass */
+.about-spec .as-left .asl-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "NotoSansCJKtc-Medium", "Helvetica", "Arial";
+  text-align: center;
+  letter-spacing: 0.9px;
+  color: #333A47;
+}
+/* line 13, ../sass/sass/component/_about.sass */
+.about-spec .as-left .asl-content {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "NotoSansCJKtc-Regular", "Helvetica", "Arial";
+  letter-spacing: 1.2px;
+  color: #333A47;
+}
+/* line 16, ../sass/sass/component/_about.sass */
+.about-spec .as-right {
+  width: 50%;
+  min-height: 500px;
+  float: right;
+}
+/* line 21, ../sass/sass/component/_about.sass */
+.about-spec .as-right .asr-image {
+  width: 100%;
+  min-height: 500px;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  background-image: url(../img/snappa_1465269679.jpg);
+}
+
+/* line 1, ../sass/sass/component/_products.sass */
+.products-spec {
+  padding: 50px;
+}
